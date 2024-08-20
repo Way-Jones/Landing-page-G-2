@@ -1,0 +1,256 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(pexels-pixabay-38238.jpg);
+    background-size: cover;
+    padding-top: 8%;
+
+}
+.main{
+    width: 90%;
+    height: 690px;
+    margin: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 5px solid whitesmoke;
+    border-bottom: 150px solid aliceblue;
+    background-image: url(pexels-pixabay-38238.jpg);
+    background-size: cover;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    
+}
+.contain{
+    justify-content: space-between;
+}
+
+/* Header Styling */
+header {
+    background:transparent;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.logo img {
+    height: 40px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 1000px;
+
+}
+
+nav ul {
+    justify-content: space-between;
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+    display: flex;
+    
+}
+
+nav li {
+    margin-left: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    position: relative;
+    
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+.register-btn {
+    background-color: lightgreen;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px;
+}
+
+.register-btn:hover {
+    background-color: #0056b3;
+}
+.one{
+    font-size: 30px;
+}
+
+/* Hero Section Styling */
+.hero {
+    padding: 100px 0;
+    background-color: transparent;
+}
+
+.hero h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: white;
+    text-shadow: 2px 2px 10px  black;
+    
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.search-bar {
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    position: absolute;
+    bottom: -100px;
+    margin-left: 5%;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    margin-right: px;
+    width: 1100px;
+
+
+}
+
+.option {
+    background-color: lightgrey;
+    padding: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: none;
+    margin-left: 10px;
+    margin-bottom: -9px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background: 0.2 transparent;   
+    position: relative;
+}
+.option-search{
+    background-color: white;
+    padding: 15px;
+    margin-bottom: -9px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    
+}
+.domain{
+   background-color: white;
+   border-radius: 20px;
+   height: 80px;
+   align-items: baseline;
+   padding: 25px;
+   padding-top: 15px;
+   margin: 0;
+   position: absolute;
+   border-top-left-radius: 0px;
+}
+.option img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 890px;
+    margin-right: 10px;
+}
+
+.search-btn {
+    background-color: lightgreen;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    display: flex;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-items: center;
+}
+.search-btn img{
+    width: 20px;
+    margin-right: 5px;
+}
+h2{
+    font-size: 20px;
+}
+.search{
+    display: flex;
+}
+
+.search-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero img {
+        margin-top: 20px;
+    }
+    
+    .search-bar input {
+        width: 100%;
+    }
+}
